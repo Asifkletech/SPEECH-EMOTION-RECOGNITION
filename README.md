@@ -58,5 +58,34 @@ its distinctive properties in a more stable condition.
 * Cepstrum is used to convert the signals that had been combined by the convolution for
 linear separation
 
+# LSTM(Long Short Term Memory)
+
+The capability of each unit’s knowledge to be learned, unlearned, or retained in a specific order is
+thanks to a cell state, three gates, and an LSTM module. Through the restriction of the number
+of linear interactions, the cell state in LSTM enables the uninterrupted flow of information
+between the units. Three layers make up the LSTM network: an input layer, a single hidden
+layer, and a typical feedforward output layer
+
+![Web capture_12-1-2024_18652_](https://github.com/Asifkletech/SPEECH-EMOTION-RECOGNITION/assets/151855456/bce5a6d0-a2c1-4451-bcff-2a6a6981b8a9)
+
+The output of LSTM is particularly dependent on three things:
+* cell state - the most recent long-term memory of the network
+*  hidden state - the output from the preceding moment
+* The input information for this time step
+
+  # Why work with LSTM
+
+  The vanishing gradient problem with RNNs (Recurrent Neural Networks) was resolved by the
+development of the LSTM network. In contrast to more conventional feedforward neural networks, they have feedback connections. To facilitate the processing of new data points, the
+LSTM saves pertinent information from earlier data points in the sequence. As Consequently,
+it excels at processing voice, text, and general time series.
+
+We’ll try to explain the LSTM model by using an example. Imagine that we’re
+attempting to forecast monthly ice cream sales. These vary considerably according on the
+month of the year. This pattern, which repeats itself every 12 cycles, can be learned by an LSTM
+network and is lowest in December and highest in June. It overcomes the problem of long-term
+dependency that other models have by not just using the prior forecast but also keeping in mind
+a wider context. This is a pretty simple example and as the pattern is separated by much longer
+periods, LSTMs become beneficial.
 
   
