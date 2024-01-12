@@ -14,10 +14,12 @@ to infer emotion from speech data.
 
 ## Objectives
 
-* To devolop and increase the efficiency of the human-machine interface is the main goal
+* To develop and increase the efficiency of the human-machine interface is the main goal
 for SER.
-* We can try to empliment it in lie detectors to track a subject’s psychophysical condition.
+* We can try to implement it in lie detectors to track a subject’s psychophysical condition.
 * We can also find its applications in medicine and forensics departments.
+* We can use it in Robotics to understand human emotions through voice
+* It can be deployed in Automotive Vehicles
 
 ## Methodology
 # Chroma
@@ -28,7 +30,7 @@ comprehend how the audio files’ pitches are categorized.
 * the structuring of the audio waveforms to provide precise, thorough representations of the
 audio sources as a function of time delay
 * spectral preprocessing is a method in which Alternate frequency domain representations
-of a sound can be obtained by analysing it; these representations can then be reversed
+of a sound can be obtained by analyzing it; these representations can then be reversed
 and manipulated to create new sounds.
 * A semitone has a frequency ratio of 2 to the power of(1/12) in terms of frequencies.
 * One main property of chroma features is that they capture harmonic and melodic characteristics of music, while being robust to changes in timbre
@@ -39,12 +41,12 @@ and manipulated to create new sounds.
 
 * Chroma features, which employ a 12-element spectral energy representation known as a
 chroma vector, are an effective way to express music audio.
-* where in each of the 12 bins represented a class of western music with 12 equal-tempered
+* wherein each of the 12 bins represented a class of Western music with 12 equal-tempered
 pitches (semitone spacing)
-* The majority of audio recordings have a frequency whose energy changes in relation to
+* The majority of audio recordings have a frequency whose energy changes concerning
 time.
-* To analyse the frequency energy at each time stamp, we utilize spectral contrast.
-* Because it is difficult to measure energies, we utilise contrast to track changes in energy.
+* To analyze the frequency energy at each timestamp, we utilize spectral contrast.
+* Because it is difficult to measure energies, we utilize contrast to track changes in energy.
 
   # MFCC
 
@@ -53,7 +55,7 @@ time.
   * Frame blocking is the method of processing a speech signal in short periods to extract
 its distinctive properties in a more stable condition.
 * Windowing is the process of splitting a spoken signal into segments of a specific length.
-* The wrapping of mel frequency is usually carried out by a filterbank
+* The wrapping of Mel frequency is usually carried out by a filterbank
 * The estimated signal spectrum’s logarithm is calculated using the inverse Fourier transform to get the cepstrum.
 * Cepstrum is used to convert the signals that had been combined by the convolution for
 linear separation
