@@ -93,7 +93,7 @@ periods, LSTMs become beneficial.
 We have used the dataset known as RAVDESS(The Ryerson Audio-Visual Database of Emotional
 Speech and Song). link(https://zenodo.org/record/1188976.Y1EP53ZBxPZ)
 * There are a total of 7356 files in the RAVDESS(Ryerson Audio-Visual Database of Emotional Speech and Song )(total size: 24.8 GB).
-* The dataset has a total of 24 qualified actors in which there are 12 females and 12 males
+* The dataset has a total of 24 qualified actors which there are 12 females and 12 males
  , each of whom reads two lexical and grammatical related sentences with an American
 accent.
 * Both speech and music contain a range of emotions, including those associated with serenity, happiness, sadness, anger, fear, surprise, and disgust. There are two emotional intensity levels (normal and strong)
@@ -106,14 +106,17 @@ use the audio only as a database
 ![Web capture_12-1-2024_181327_](https://github.com/Asifkletech/SPEECH-EMOTION-RECOGNITION/assets/151855456/2d097660-d66c-41a3-b275-f73f58eb934d)
 
 With a total of 2900 audio recordings, the RAVDESS dataset with audio only was
-utilized. We used that as an input, as shown in fig. 6.1. In the procedure, we used contrast,
-chroma, and MFCCs as the three primary elements to detect the emotions. A total of 40 MFCCs,
+utilized. We used that as an input, as shown in Fig. 6.1. In the procedure, we used contrast,
+chroma, and MFCCs as the three primary elements to detect emotions. A total of 40 MFCCs,
 12 contrast and 7 chroma characteristics have been collected. Next, using an Excel spreadsheet,
 we properly organized the features into rows and columns before sending it to the LSTM model
 . As shown in the following block diagram we have used an input layer, 2 RELU layers, and a
-single softmax layer. The abbreviation for RELU is rectified linear unit the advantage of this
+single softmax layer. The abbreviation for RELU is a rectified linear unit the advantage of this
 unit is that it does not activate all the neurons at a single time. Softmax it is used to represent
 the output as 0 or 1.
+
+![Web capture_12-1-2024_18179_](https://github.com/Asifkletech/SPEECH-EMOTION-RECOGNITION/assets/151855456/6ff36ce8-8af6-4de4-9c59-d1ddafbe713b)
+
 
 # CONCLUSION
 
@@ -121,7 +124,7 @@ In this paper, we have used the LSTM model and worked with the features as menti
 the paper(chroma,contrast,MFCCs).We are using the LSTM model because it can resolve the
 the issue regarding RNNs(vanishing gradient problem), is also that they have feedback network
 as LSTM preserves relevant data from earlier data points in the sequence to aid in processing
-new data points. The overall accuracy that we can get by using this LSTM model 88
+new data points. The overall accuracy that we can get by using this LSTM model 92
 percentage
 
 # FUTURE SCOPE
