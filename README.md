@@ -88,4 +88,49 @@ dependency that other models have by not just using the prior forecast but also 
 a wider context. This is a pretty simple example and as the pattern is separated by much longer
 periods, LSTMs become beneficial.
 
+# DATASET
+
+We have used the dataset known as RAVDESS(The Ryerson Audio-Visual Database of Emotional
+Speech and Song). link(https://zenodo.org/record/1188976.Y1EP53ZBxPZ)
+* There are a total of 7356 files in the RAVDESS(Ryerson Audio-Visual Database of Emotional Speech and Song )(total size: 24.8 GB).
+* The dataset has a total of 24 qualified actors in which there are 12 females and 12 males
+ , each of whom reads two lexical and grammatical related sentences with an American
+accent.
+* Both speech and music contain a range of emotions, including those associated with serenity, happiness, sadness, anger, fear, surprise, and disgust. There are two emotional intensity levels (normal and strong)
+* Three modalities—Audio only (16bit, 48kHz.wav), Audio video (720p H.264, AAC 48kHz,.mp4),
+and Video only—are offered for all situations (no sound).In which we are only going to
+use the audio only as a database
+
+# IMPLEMENTATION
+
+![Web capture_12-1-2024_181327_](https://github.com/Asifkletech/SPEECH-EMOTION-RECOGNITION/assets/151855456/2d097660-d66c-41a3-b275-f73f58eb934d)
+
+With a total of 2900 audio recordings, the RAVDESS dataset with audio only was
+utilized. We used that as an input, as shown in fig. 6.1. In the procedure, we used contrast,
+chroma, and MFCCs as the three primary elements to detect the emotions. A total of 40 MFCCs,
+12 contrast and 7 chroma characteristics have been collected. Next, using an Excel spreadsheet,
+we properly organized the features into rows and columns before sending it to the LSTM model
+. As shown in the following block diagram we have used an input layer, 2 RELU layers, and a
+single softmax layer. The abbreviation for RELU is rectified linear unit the advantage of this
+unit is that it does not activate all the neurons at a single time. Softmax it is used to represent
+the output as 0 or 1.
+
+# CONCLUSION
+
+In this paper, we have used the LSTM model and worked with the features as mentioned above in
+the paper(chroma,contrast,MFCCs).We are using the LSTM model because it can resolve the
+the issue regarding RNNs(vanishing gradient problem), is also that they have feedback network
+as LSTM preserves relevant data from earlier data points in the sequence to aid in processing
+new data points. The overall accuracy that we can get by using this LSTM model 88
+percentage
+
+# FUTURE SCOPE
+
+It can be used in AI or robots to make them understand human emotions and act according
+to that of the human's mood. For example, when a human is in a bad mood, the robot must try
+to calm the human down instead of making him more irate. Customer service representatives
+might find it helpful to know the mood in which their customers are and give an appropriate
+answer by deciding their mood.
+
+
   
