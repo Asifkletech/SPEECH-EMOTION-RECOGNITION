@@ -126,7 +126,7 @@ In this paper, we have used the LSTM model and worked with the features as menti
 the paper(chroma,contrast,MFCCs).We are using the LSTM model because it can resolve the
 the issue regarding RNNs(vanishing gradient problem), is also that they have feedback network
 as LSTM preserves relevant data from earlier data points in the sequence to aid in processing
-new data points. The overall accuracy that we can get by using this LSTM model 92
+new data points. The overall accuracy that we can get by using this LSTM model 80
 percentage
 
 # FUTURE SCOPE
